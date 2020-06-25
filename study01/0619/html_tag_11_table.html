@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lag="ko">
+<head>
+<meta charset="utf-8">
+
+<title>html 태그학습_11테이블테그</title>
+<style>
+.t01{
+width:600px;
+}
+
+.t02{
+width:500px;
+border-collapse:collapse;
+}
+</style>
+</head>
+<body>
+<h2>11테이블태그</h2>
+<p>
+테이블태그는 문서작성 프로그램에서 표처럼 마들기위한 태그로 웹문서안에서 특정영역의 레이아웃을 잡기위해서 사용한다.
+</p>
+<p>주로 로그인 양식, 회원가입, 주문양식, 글쓰기 , 이메일양식, 게시판 목록 등의 내용을 작성할 때 사용</p>
+
+<p>테이블태그의 구성은 table, caption (표제목, 설명), tr(줄,행), th(셀 제목),td(셀 내용)</p>
+<h3>1. 테이블의 기본구성</h3>
+
+<table border="2">
+  <caption>표제목이나 설명문구</caption>
+   <tr>
+    <td>1줄1칸</td><td>1줄1칸</td><td>1줄1칸</td><td>1줄1칸</td>
+   </tr>
+   <tr>
+    <td>1줄1칸</td>
+    <td>1줄1칸</td>
+   </tr>
+   <tr>
+    <td>1줄1칸</td>
+    <td>1줄1칸</td>
+   </tr> 
+   <tr>
+    <td>1줄1칸</td>
+    <td>1줄1칸</td>
+    <td>1줄1칸</td>
+   </tr>
+</table>
+
+<table border="3">
+<caption>3줄3칸테이블 만들기</caption>
+<tr>
+<td>하나하나</td><td>하나</td><td>하나</td>
+</tr>
+<tr>
+<td>둘</td><td>둘</td><td>둘</td>
+</tr>
+<tr>
+<td>셋</td><td>셋</td><td>셋</td>
+</tr>
+</table>
+<h3>2.셀제목이들어간표만들기</h3>
+<table border="1" class="t01">
+ <caption>표제목,설명</caption>
+   <tr>
+     <th>번호</th><th>제목</th><th>작성자</th>
+   </tr>
+   <tr>
+     <td>1</td><td>th안 문자는 굵고, 중앙정렬이된다.</td><td>현정</td>
+   </tr>
+  <tr>
+     <td>1</td><td>th안 문자는 굵고, 중앙정렬이된다.</td><td>현정</td>
+   </tr>
+</table>
+
+<p>
+th태그는 셀제목이기 때문에 글자가 기본적으로 굵게 표시되며 셀가운데 정렬이 기본이다.
+</p>
+
+<h3>3. 테이블 셀 병합하기 - colspan(가로병합),rowspan(세로병합)</h3>
+
+<table border="1">
+ <caption>가로병합</caption>
+<tr><td colspan="2">가로</td></tr>
+<tr><td>가로</td><td>가로병합</td></tr>
+</table>
+
+<table border="1">
+ <caption>세로병합</caption>
+<tr><td rowspan="2">세로</td><td>세로병합</td></tr>
+<tr><td>세로병합</td><td rowspan="2">세로세로</td></tr>
+<tr><td>세로병합</td></tr>
+</table>
+
+<h3>웹표준에맞는 테이블 작성하기</h3>
+<p>웹표준(Web standard)이란? 웹에서 표준적으로 사용되는기술의 총칭을 말하며 가장 대표적인 웹언어로
+html5, css3, javaScript/jQuery가있다.<br>
+또한 모든사용자환경,브라우저에서 문서가 잘 보이도록 호환성을 높여야 하는데 이것을 크로스브라우징이라고 한다.</p>
+
+<table border="1" class="t02">
+
+<caption>2학년 중간고사 성적 현황</caption>
+
+<thead>
+<tr><th>성명</th><th>국어점수</th><th>수학점수</th><th>합계</th></tr>
+</thead>
+
+<tfoot>
+<tr><th>합계</th><th>360</th><th>340</th><th>&nbsp;</th> </tr>                                                                           </tfoot> 
+
+<tbody>
+<tr><td>까미</td><td>100</td><td>80</td><td>180</td></tr>
+<tr><td>몽이</td><td>80</td><td>90</td><td>170</td></tr>
+<tr><td>현</td><td>100</td><td>80</td><td>180</td></tr>
+<tr><td>화</td><td>80</td><td>90</td><td>170</td></tr>
+
+</tbody>                                                     
+</table>
+
+<p>
+웹접근성을 위해서 tfoot을 tbody위에 올려주면 스크린리더를 통해서 시각장애인분들이 스피커로 음성을 들을때 본문내용을 먼저 읽기보다는 아래 내용을 먼저읽어서 전체내용을 빠르게 파악할수있기때문에 순서를 변경해준다.(thead tfoot tbody)
+</p>
+
+</body>
+</html>

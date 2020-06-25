@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>html태그학습 13 multimedia tag</title>
+<style>
+h3{
+color:mediumseagreen;
+}
+</style>
+</head>
+<body>
+<h2>13_ 멀티미디어 태그</h2>
+<p>멀티미디어 - multi + media의 합성어로서 '다중' +'매체'라는 뜻을 가지고있다.
+신문,서적,라디오를 말하며 오늘날은 pc, tablet, mobile디바이스를 통해다양한정보를 접한다.
+멀티미디어를 처리하는 기기와 응용 소프트웨어를 멀티미디어 플랫폼이라고 부르며 여기에는 컴퓨터, 디지털TV나 모바일이나 PDA, 스마트기기 등이 포함된다.
+</p>
+<p>
+웹페이지를 구성하는 요소에는 문자, 이미지콘텐츠 외에 영상이나 사운드, 플래시 애니메이션등이 멀티미디어에 속한다. 영상이나 사운드를 삽입하기위한 태그요소를 멀티미디어 태그라고 한다.
+</p>
+<p>html5에서 지원하는 멀티미디어 태그요소는 video, audio태그가있다. 그 이전에는  embed, object태그요소가 있었다. (낮은버전 브라우저에서는 아직 지원함)</p>
+<p>
+embed, object 태그요소는 웹브라우저마다 지원하는수준과 방식이 차이가있으므로 제한적으로 사용하고, 가능하면 쓰지않는게 좋다.
+</p>
+
+
+
+<h3>1. video, audio태그 사용법</h3>
+<p>
+작성법) video src ="영상파일주소" <br>
+          audio src="음악파일주소"
+</p>
+
+<dl>
+<dt>사용가능한 속성</dt>
+<dd>autoplay: 오디오/비디오 파일 자동재생</dd>
+<dd>volume: 오디오/비디오 재생볼륨 설정(0.0~1.0)</dd>
+<dd>poster: 비디오파일에대한포스터 이미지</dd>
+<dd>controls: 오디오/비디오 파일 재생기 이미지</dd>
+<dd>loop: 오디오/비디오 반복재생</dd>
+<dd>width, height : 비디오 재생시 화면 크기조절</dd>
+</dl>
+<h3>2. 음악파일 종류와 삽입방법</h3>
+<p>html5에서 표준으로 지정된 음악파일의 확장자는 mp3, ogg파일이다.</p>
+<p>mp3 음악파일 삽입하기</p>
+<audio src="./media/seeyou.mp3" controls></audio>
+<audio src="./media/Kalimba.ogg" controls></audio>
+
+<p>모든브라우저에서 음악이 잘 나올수있게 호환성을 높이는 방법</p>
+<audio controls>
+<source src="./media/Kalimba.mp3" type="audio/mp3">
+<source src="./media/Kalimba.ogg" type="audio/ogg">
+<p>이 브라우저에서는 지원되지 않는 콘텐츠가 있습니다. 최신브라우저로 업데이트하세요.</p>
+</audio>
+
+<p>
+음악파일 확장자는 시스템이나 사용자환경, 브라우저의 종류, 버전에 따라 지원이 안될경우 대체할 음악을 넣어주거나 안내문구를 넣어준다.
+</p>
+
+<h3>3. 영상파일 삽입하기 - mp4, webm, ogv </h3>
+
+<p class="text">mp4영상파일</p>
+<video src="./media/Kloud.mp4" controls></video>
+<p class="text">webm 영상파일</p>
+<video src="./media/Painting.webm" controls></video>
+<p class="text">ogv 영상파일</p>
+<video src="./media/Painting.ogv" controls></video>
+
+<p>mp4 확장자는 모든 브라우저에서 잘 지원이되지만 webm확장자는 익스프로러, 사파리, 안드로이드브라우저에서는 지원이 안된다.
+따라서 webm을 사용시 대체영상을 넣어준다.</p>
+
+<video controls>
+ <source src="./media/Painting.mp4" type="video/mp4">
+ <source src="./media/Painting.webm" type="video/webm">
+ <source src="./media/Painting.ogv" type="video/ogv">
+<p>이 브라우저에서는 지원되지않는 콘텐츠가 있습니다. 브라우저를 최신버전으로 업데이트하여주세요.</p>
+</video> 
+<p>
+영상파일을 편집하거나 확장자를 바꿀때는 프리미어, 파이널컷프로, 다음팟인코더를 사용한다.
+</p>
+
+<p><strong>영상포멧으로인해 다양한 환경이나 브라우저에서 지원되는게 고민이라면 유튜브에 영상을 업로드해서 공유한뒤 iframe태그로 사용하면 된다.</strong></p>
+
+<h3>4. 영상에 표지삽입하기- poster</h3>
+<video src="./media/daesun_360p.mp4" controls poster="dae.jpg"></video>
+
+<h3>5. 영상에 자막파일 삽입하기</h3>
+<video src="./media/Painting.mp4" controls type="video/mp4">
+ <track kind="subtitles" src=".media/Painting.vtt" srclang="ko" lable="한국어">
+ <track kind="subtitles" src=".media/Painting.vtt" srclang="en" lable="영어">
+ <track kind="subtitles" src=".media/Painting.vtt" srclang="jp" lable="일본어">
+ <track kind="subtitles" src=".media/Painting.vtt" srclang="ch" lable="중국어">
+</video>
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"
+<title>html_태그학습_17.추가폼태그</title>
+<style>
+
+</style>
+</head>
+
+<body>
+<h2>17. html 추가 폼태그</h2>
+<p>html5에서는 시멘틱구조를 표현하기위한 폼태그가 추가되었는데 폼그룹을 지정하기위한 fieldset, 그룹안에 제목을 지정하기위한 legend 태그가 있다.
+</p>
+
+<form name="symentic" method="post" action="">
+<fieldset>
+  <legend>로그인</legend>
+  <input type="text" mexlength="16" placeholder="아이디">
+  <input type="password" maxlength="16" placeholder="패스워드">
+</fieldset>
+<fieldset>
+ <legend>개인정보</legend>
+ <label for="p01">이름</label><input type="text" id="p01">
+<label for="p02">연락처</label><input type="tel" id="p02">
+</fieldset>
+<fieldset>
+  <legend>배송지 정보</legend>
+  <label>받는사람 : </label><input type="text"><br>
+  <label>받는사람 : </label><input type="text"><br>
+
+  <label>주소</label> :  <input type="text"><br>
+
+  <label>연락처</label>
+<select name="">
+  <option>010</option>
+  <option>011</option>
+  <option>별정통신</option>
+</select>
+
+<input type="tel" maxlength="4"><input type="tel" maxlength="4"><br>
+<label>배송시 요구사항</label>
+<textarea cols="30" rows="10"></textarea>
+</fieldset>
+
+<fieldset>
+<legend>주문정보</legend>
+<input type="checkbox" id="c01"><label for="c01">과테말라 안티구아 (100g)</label>
+<input type="number" id="n01"><label for="n01">개</label><br>
+
+<input type="checkbox" id="c02"><label for="c02">인도네시아 만델링 (100g)</label>
+<input type="number" id="n02"><label for="n02">개</label><br>
+
+<input type="checkbox" id="c03"><label for="c03">탐라는도다(블렌딩) (100g)</label>
+<input type="number" id="n03"><label for="n03">개</label><br>
+
+</fieldset>
+</form>
+
+
+
+</body>
+</html>

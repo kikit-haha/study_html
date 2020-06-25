@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" width="width=device-width, initial-scale=1">
+<title>html_태그학습_09하이퍼링크</title>
+
+</head>
+<body>
+<p id="top"></p>
+<a href="#bottom" title="아래로이동하기">아래로이동하기</a>
+<ul class="list">
+<li><a href="#a" title="1.텍스트로링크걸기">텍스트로 링크걸기</a></li>
+<li><a href="#b" title="2.이미지로링크걸기">이미지로 링크걸기</a></li>
+<li><a href="#c" title="3. 이메일로 링크걸기">이메일로 링크걸기</a></li>
+<li><a href="#d" title="4. 특정위치로 링크걸기">특정위치로 링크걸기</a></li>
+<li><a href="../0617/html_08_img_svg.html#d" title="특정위치">특정페이지에 특정위치로 링크걸기</a>
+</ul>
+<h2 >09 하이퍼링크</h2>
+<p>하이퍼링크란? 하이퍼텍스트로 이루어진 문서에서 사용자가 마우스로 클릭을했을때 다른문서나 페이지로 이동하기위한 요소로 텍스트하이퍼링크, 이미지하이퍼링크, 이메일하이퍼링크, 특정위치로 이동하기위한 링크, 하나의 이미지에여러개의 링크를할수있는 이미지맵링크가있다.
+</p>
+
+<p>
+작성법) Anchor Hyper reference의 약자인 a 태그와 href속성을 사용한다.<br>
+                a href="연결할문서의 주소나 경로" title="설명문구"
+</p>
+
+<h3 id="a">1. 텍스트에 하이퍼링크 걸기</h3>
+<a href="http://www.naver.com" title="네이버 바로가기">네이버</a> 
+<a href="http://www.daum.net" title="다음 바로가기">다음</a>
+<a href="http://nate.com" title="네이트 바로가기">네이트</a>
+<a href="http://www.google.com" title="구글 바로가기">구글</a>
+<p>
+title 속성은 사용자가 링크가 걸린 요소에 마우스오버시 설명글이 나오게하는 속성. 모든 사용자가 이해할수있도록 하기위한 웹 접근성 방법중의 하나이다. html마크업검사시 속성을 안넣으면 오류가 나온다.
+</p>
+
+<dl>
+
+<dt>수업시참고 사이트</dt>
+<dd><a href="http://www.w3schools.com" title="w3c 온라인학습사이트 바로가기">W3C온라인 학습사이트(html,css,js,jQuery)</a></dd>
+<dd><a href="https://www.dbcut.com/bbs/index.php" title="디비컷 바로가기">디비컷- 국내, 해외 웹사이트 카테고리별로 모아둔사이트</a></dd>
+<dd><a href="http://validator.kldp.org/" title="html 마크업 검사 서비스 바로가기">html 마크업 검사 서비스</a></dd>
+
+<dt>수업에서 작업한 문서 보기</dt>
+<dd><a href="../0617/html_tag_07_img.html" title="이미지 태그 문서">이미지 태그 문서</a></dd>
+<dd><a href="../0617/html_08_img_svg.html" title="svg문서보기">svg문서보기</a></dd>
+<dd><a href="http://www.youtube.com" title="유튜브">유튜브 영상보기</a></dd>
+</dl>
+
+
+<p> a 요소 사용시 href, title속성은 필수 속성이며, 클릭시 새로운 페이지로 링크를 연결하기 위해, 
+또는 특정위치로 이동하기 위해 target속성을 추가로 사용할수있다.
+ target="_blank" : 새로운탭에서 페이지가 열린다.
+</p>
+
+<a href="http://www.11st.co.kr" alt="11번가" target="_blank">11번가 바로가기</a>
+
+<h3 id="b">2.이미지로 하이퍼링크 하기</h3>
+
+<a href="http://www.naver.com" title="네이버 바로가기">
+<img src="../0617/svg/naver.svg" alt="네이버 로고">
+</a><br>
+<a href="http://www.daum.net" title="다음 바로가기">
+<img src="../0617/img/daum_logo.png" alt="다음로고">
+</a><br>
+<a href="http://www.starbucks.co.kr" title="스타벅스바로가기">
+<img src="../0617/img/logo/Starbucks-Logo.png" alt="스타벅스 로고">
+</a>
+
+
+<p>title 속성 : a 태그 작성시 사용자가 마우스를 올렸을때 도움말이 나오도록 하는 속성으로서 노약자, 장애인인분들이 링크에 대한 도움말을 통해 정확한 이해를 돕고자하는 보충설명으로서 웹접근성, 웹표준에서 지켜야할 속성중에 하나이다.
+</p>
+<p>
+alt속성 : 이미지를 삽입시 이미지에 대한 설명문구를 나타내며, 브라우저에서 이미지가 표시되지 않을때 나오는글자이기도 하다.
+시각장애인분들이 이미지를 이해하기위한 하나의 수단이기때문에 반드시 넣어주고, 웹접근성, 웹표준에서 지켜야할 규칙중에 하나이다.
+</p>
+
+<h3 id="c">3. 이메일 링크</h3>
+<p>사용자가 문자나 이미지 클릭시 '아웃룩프로그램'이 실행되면서 관리자나 상대방에게 메일보낼수있는 창이 뜨게 하는 기능</p>
+
+<a href="mailto:bluechocohj@naver.com" title="관리자에게 메일보내기">
+관리자에게 이메일 보내기
+</a>
+
+<h3 id="d">4. 특정위치로 이동하는 링크(네임앵커)</h3>
+<p>네임앵커 기능은 사용자가 원하는위치에 이름을 표시한 뒤에 특정문자나 이미지를 클릭하면 이름이 표시된 위치로이동하기위해 사용한다.</p>
+<p>또한 다른문서의 특정위치에 아이디값을 설정하면, 현재문서뿐아니라 다른문서로도 위치이동이 가능하다.</p>
+<p>참고사이트
+<ul>
+<li><a href="http://firstsoju.co.kr" title="firstsoju">firstsoju</a></li>
+<li><a href="http://www.ildongvileda.co.kr" title="vileda">vileda</a></li>
+<li><a href="http://www.amendini.baskinrobbins.co.kr/index" title="baskin robbins">baskin robbins</a></li>
+</ul>
+</p>
+<img src="../0617/logomaking/ediya.svg" alt="이디야로고"><br>
+<a href="#" title="위로 바로가기">Top</a>
+<p id="bottom"></p>
+</body>
+</html>

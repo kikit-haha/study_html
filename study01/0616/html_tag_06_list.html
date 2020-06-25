@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>html태그학습_06목록관련 태그요소</title>\
+<style>
+
+.lnb{
+width:230px;
+padding:15px;
+background-color:#0000ff;
+color:#ffffff;
+float:left;
+}
+
+.lnb>dt{
+font-weight:bold;
+font-size:18px;
+margin-bottom:20px;
+}
+
+.lnb>dd{
+margin:0px;
+padding: 0px;
+}
+
+h3{clear: left;}
+/*li{list-style:none;}*/
+
+.list01{
+list-style:none;
+}
+.list01 > li{
+background-image : url('../0617/bullet.png');
+background-repeat : no-repeat;
+background-position : 0px 3px;
+text-indent : 16px;
+}
+</style>
+
+</head>
+
+<body>
+<h2>06목록관련 태그요소-dl, ol, ul</h2>
+<p>목록은 관련있는 주제에 맞는 내용을 나열할때 사용하는 태그이며 정의목록(dl,dt,dd), 
+순차목록(ol,li), 비순차목옥(ul,li)이 있다.</p>
+
+<h3>1.정의목록</h3>
+<p>
+용어에대한 정의내릴때 사용. dl(definition list), dt(definition term), dd태그로 작성한다.
+</p>
+<dl>
+<dt>html이란</dt>
+<dd>hyper text markup language의 약자로서 웹문서의 구조를 제작하기위한 언어입니다.</dd>
+<dd>문법이쉬워서 누구나 쉽게 배울 수 있다.</dd>
+<dd>최신 언어는 html5</dd>
+<dd>html은 메모장이나 웹편집기에서 작성이 가능하다.</dd>
+</dl>
+ <h3>콜롬비아 코리아 쇼핑몰 푸터영역 내비게이션 만들기</h3>
+
+<dl class="lnb">
+<dt>ABOUT US</dt>
+<dd>HISTORY</dd>
+<dd>NOTICE</dd>
+<dd>매장안내</dd>
+<dd>매장소식</dd>
+<dd>CONTACT US</dd>
+</dl>
+
+<dl class="lnb">
+<dt>CUSTOMER SERVICE</dt>
+<dd>FAQ</dd>
+<dd>1:1 Q&amp;A</dd>
+<dd>A/S안내 및 조회</dd>
+</dl>
+
+
+<h3>2.순차목록-ol,li</h3>
+<p>
+순서가있는목록으로 ol(order list), li(list)태그사용하며 type속성을쓰면 숫자,영문, 로마자로도 변경이 가능하다.
+</p>
+<ol type="A">
+<li>순</li>
+<li>서</li>
+<li>있</li>
+<li>는</li>
+</ol>
+<ol type="a">
+<li>순</li>
+<li>서</li>
+<li>있</li>
+<li>는</li>
+</ol>
+<ol>
+<li>순</li>
+<li>서</li>
+<li>있</li>
+<li>는</li>
+</ol>
+<ol type="i">
+<li>순</li>
+<li>서</li>
+<li>있</li>
+<li>는</li>
+</ol>
+<ol type="I">
+<li>순</li>
+<li>서</li>
+<li>있</li>
+<li>는</li>
+</ol>
+
+<p>실시간 검색순위, 영화예매순위등의 목록을 만들때 사용.</p>
+<h3>3. 비순차목옥 - ul, li</h3>
+<p>
+순서없는목록. ul(unorder list), li(list)태그를 사용.  type속성을 쓰면 circle, disc, squrare 3가지모양쓸수있다.
+
+</p>
+<ul>
+<li>순</li>
+<li>서</li>
+<li>없</li>
+<li>는</li>
+</ul>
+<ul type="circle">
+<li>순</li>
+<li>서</li>
+<li>없</li>
+<li>는</li>
+</ul>
+<ul type="square">
+<li>순</li>
+<li>서</li>
+<li>없</li>
+<li>는</li>
+</ul>
+
+<p><strong>순서없는 목록은 상단헤더영역 내비게이션, 언론사 쇼핑몰 이미지목록, 콘텐츠영역의 메뉴목록, 사진과 글 목록, 뉴스목록, 푸터영역의 하단메뉴목록 등으로 많이 활용된다.</strong></p>
+
+
+<h3>목록안에 목록태그를 사용(이중목록)하여 2단 내비게이션 구조만들기.</h3>
+<p>마우스올리면 나오는 메뉴도 이렇게 만든다.(2단내비게이션)</p>
+
+<ul>
+<li>관람 정보
+ <ul>
+   <li>전시관람</li>
+   <li>전시해설</li>
+   <li>예약하기</li>
+ </ul>
+</li>
+
+<li>전시
+ <ul>
+  <li>상설전시</li>
+  <li>특별전시</li>
+  <li>디지털 실감 영사관</li>
+</ul>
+</li>
+
+<li>교육 &middot; 행사
+ <ul>
+  <li>교육 신청</li>
+  <li>교육 자료</li>
+  <li>교육 소식</li>
+</ul>
+</li>
+
+</ul>
+
+ <h2>목록관련태그</h2>
+  <h3>목록기호숨기고 불릿이미지로 대체하기</h3>
+<p>
+그래픽 프로그램 활용하여 불릿이미지를 제작한 다음 목록앞에 배경이미지로 삽입해서 나오도록 하기
+</p>
+
+<ul class="list01">
+ <li>순서없는목록</li>
+ <li>순서없는목록</li>
+ <li>순서없는목록</li>
+</ul>
+
+
+</body>
+</html>

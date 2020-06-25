@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>html태그학습_10_이미지맵</title>
+
+</head>
+<body>
+<h2>10_이미지맵</h2>
+<p>
+이미지맵(image map)은 하나의 이미지에 여러개의 링크를 걸기위한기능. 이미지위에 다각형,사각형, 원형(rect/circle/poly)의 투명한 버튼을 만들어서 링크를 건다.
+</p>
+<p>
+이미지 삽입한 후, map태그와 area태그를 사용하여 img태그와 연결시켜사용한다 이때 사각형, 원형, 다각형은 좌표값을 사용하여 표시해준다.
+</p>
+<p>
+작성법) img src="" alt="제품목록" usemap="연결할 맵이름" </p>
+<img src="./map/main_item1.jpg" alt="제품목록" usemap="#item">
+<map name="item">
+ <area shape="rect" coords="20,12,162,214" href="http://www.11st.co.kr" alt="11번가 바로가기">
+ <area shape="rect" coords="173,6,319,207" href="http://www.gmarket.co.kr" alt="g마켓바로가기">
+ <area shape="rect" coords="319,8,505,210" href="http://www.oction.co.kr" alt="옥션 바로가기">
+ <area shape="rect" coords="488,5,664,209" href="http://www.interpark.co.kr" alt="인터파크 바로가기">
+</map>
+
+</body>
+</html>오후 3:06 2020-06-18
