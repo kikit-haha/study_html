@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>웹표준레이아웃- 1단 레이아웃</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                text-align: center;
+                
+            }
+            
+            #wrap{
+                width: 1200px;
+                margin: 0px auto;
+            }
+            header{
+                height:180px;
+                background-color:#2d9090;
+                
+            }
+            header > h1 > a {
+                 text-decoration:none;
+                 color:#000000;
+            }
+            header > h1{
+                width:300px;
+                height:50px;
+                background-color:#f2917a;
+                padding:30px;
+                margin:0px auto;
+               
+            }
+/*        tect-align:center;  써도 가운데로간다. 안에있는 내용을 가운데정렬
+                  가로사이즈있는박스 가운데정렬하려면  margin:0px auto;
+                  */
+            
+            header div{
+                background-color:#f2e36f;
+            }
+            header > div > nav{
+                width:1000px;
+                height:70px;
+              
+                background-color:#9f1ea3;
+              
+               
+            }
+          
+            section .visual{
+                height:500px;
+                background-color:#e9d7f2;
+                margin-bottom:10px;
+            }
+            section .left_con{
+                width:600px;
+                height:300px;
+                background-color:#498eed;
+                float:left;
+            }
+            section .right_con{
+                width:600px;
+                height:300px;
+                background-color:#4ec4b7;
+                float:left;
+            }
+            section::after{
+                content:"";
+                display:block;
+                clear:left;
+            }
+            section{
+                margin-bottom: 30px;
+            }
+            footer h2,address{
+                height:130px;
+            }
+            footer > h2{
+                width:400px;
+                background-color:#5a5a5a;
+                float:left;
+          
+            }
+            footer > address{
+                width:800px;
+                background-color:#898989;
+                font-style:normal;
+                float:left;
+            }
+            
+        </style>
+    </head>
+    <body>
+       <div id="wrap">
+        <header>
+            <h1><a href="index.html" title="메인페이지로 바로가기">상단로고</a></h1>
+            <div>
+                <nav>NAV</nav>
+            </div>
+        </header>
+        <section>
+            <div class="visual">visual</div>
+            <article class="left_con">article</article>
+            <article class="right_con">article</article>
+            
+        </section>
+        <footer>
+            <h2>포스코건설</h2>
+            <address>회사정보, 카피라이트</address>
+        </footer>
+        </div>
+    </body>
