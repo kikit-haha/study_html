@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>국립중앙박물관_2단내비게이션</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "나눔고딕", arial, sans-serif;
+            font-size: 12px;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        header {
+            width: 100%;
+
+        }
+
+        header>h1 {
+            text-align: center;
+            height:60px;
+            padding: 15px 0px;
+            border-bottom: 2px solid #333333;
+        }
+
+        header .gnb {
+            width: 1400px;
+            margin: 0px auto;
+
+        }
+
+        .gnb>ul>li {
+            float: left;
+            width: 200px;
+            text-align: center;
+            padding: 19px 0px;
+            position: relative;
+            
+        }
+
+        ul::after {
+            content: "";
+            display: block;
+            clear: left;
+        }
+
+        .gnb>ul>li>a {
+            display: block;
+            font-size: 20px;
+
+            font-weight: bold;
+            border-right: 2px solid #333;
+            border-bottom: 3px solid #ffffff;
+        }
+
+        .gnb>ul>li:last-child>a {
+            border-right: none;
+            
+
+        }
+
+
+        .gnb>ul>li>a:hover {
+            border-bottom: 3px solid #fb6100;
+        }
+
+        .sub {
+            position: absolute;
+            width: 100%;
+            /*            서브메뉴숨기기*/
+            display: none;
+        }
+
+        .gnb:hover .sub {
+            display: block;
+        }
+
+        /*      sub메뉴가 하나씩 나오게
+        .gnb>ul>li:hover>.sub{
+            display:block;
+        }
+        
+*/
+        .sub>li{
+            text-align:left;
+            padding-left:10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html" title="홈으로바로가기"><img src="logo.png" alt="로고"></a></h1>
+
+        <!--메뉴 가로 200*7개 = 1400px 높이 57px-->
+        <nav class="gnb">
+            <ul>
+                <li><a href="#" title="">관람정보</a>
+                    <ul class="sub">
+                        <li><a href="" title="">전시 관람</a></li>
+                        <li><a href="" title="">전시 해설</a></li>
+                        <li><a href="" title="">예약하기</a></li>
+                        <li><a href="" title="">관람·편의시설</a></li>
+                        <li><a href="" title="">오시는 길</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="#" title="">전시</a>
+                    <ul class="sub">
+                        <li><a href="#" title="">상설 전시</a></li>
+                        <li><a href="#" title="">특별 전시</a></li>
+                        <li><a href="#" title="">디지털 실감 영상관</a></li>
+                        <li><a href="#" title="">온라인 전시관</a></li>
+                        <li><a href="#" title="">우리문화재 국외 전시</a></li>
+                        <li><a href="#" title="">소속 국립박물관 전시</a></li>
+                        <li><a href="#" title="">전시도록</a></li>
+                        <li><a href="#" title="">외국박물관 소장 한국문화재</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="#" title="">교육행사</a>
+                    <ul class="sub">
+
+                        <li><a href="#" title="">교육 신청</a></li>
+                        <li><a href="#" title="">교육 자료</a></li>
+                        <li><a href="#" title="">교육 소식</a></li>
+                        <li><a href="#" title="">온라인 학습 영상 자료실</a></li>
+                        <li><a href="#" title="">이러닝</a></li>
+                        <li><a href="#" title="">문화 행사</a></li>
+                        <li><a href="#" title="">학술 행사</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">소장품</a>
+                    <ul class="sub">
+                        <li><a href="#" title=""> 큐레이터 추천 소장품</a></li>
+                        <li><a href="#" title="">소장품 검색</a></li>
+                        <li><a href="#" title="">국보·보물 검색</a></li>
+                        <li><a href="#" title="">디지털 탑본</a></li>
+                        <li><a href="#" title="">소장품 3D 보기</a></li>
+                        <li><a href="#" title="">수어 동영상</a></li>
+                        <li><a href="#" title="">소장품 열람·복제</a></li>
+                        <li><a href="#" title="">문화재 기증 안내</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">학술출판</a>
+                    <ul class="sub">
+                        <li><a href="#" title="">정기간행물</a></li>
+                        <li><a href="#" title="">고고학</a></li>
+                        <li><a href="#" title="">역사학</a></li>
+                        <li><a href="#" title="">미술사학</a></li>
+                        <li><a href="#" title="">아시아학</a></li>
+                        <li><a href="#" title="">보존과학</a></li>
+                        <li><a href="#" title="">외규장각 의궤 원문</a></li>
+                        <li><a href="#" title="">일제 강점기 조사 자료</a></li>
+                        <li><a href="#" title="">도서관</a></li>
+                        <li><a href="#" title="">기타</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">소식</a>
+                    <ul class="sub">
+                        <li><a href="#" title="">소식</a></li>
+                        <li><a href="#" title="">자원봉사 안내</a></li>
+                        <li><a href="#" title="">학예사 자격증 안내</a></li>
+                        <li><a href="#" title="">전자 민원</a></li>
+                        <li><a href="#" title="">정보공개</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">박물관소개</a>
+                    <ul class="sub">
+                        <li><a href="#" title="">인사말</a></li>
+                        <li><a href="#" title="">발자취</a></li>
+                        <li><a href="#" title="">조직 및 업무</a></li>
+                        <li><a href="#" title="">시설 소개</a></li>
+                        <li><a href="#" title="">수장고</a></li>     
+                        <li><a href="#" title="">박물관 관련 자료</a></li>
+                        <li><a href="#" title="">문화유산 표준관리시스템</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+</body></html>
