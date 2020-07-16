@@ -1,0 +1,636 @@
+@charset "utf-8";
+
+header {
+    width: 100%;
+    position: absolute;
+    background-color: rgba(54, 54, 54, 0.7);
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header .h_top {
+    width: 1280px;
+    height: 120px;
+    margin: 0px auto;
+    position: relative;
+}
+
+header > .h_top > h1 {
+    width: 400px;
+    position: absolute;
+    top: 40px;
+    left: 440px;
+
+}
+
+.h_top > h1 img {
+    width: 400px;
+    text-align: center;
+
+}
+
+/*메인 내비게이션*/
+.nav_wrap {
+    width: 100%;
+    height: 58px;
+    overflow: hidden;
+    /*    background-color:rgba(54, 54, 54,0.7);*/
+    background-color: rgba(26, 26, 26, 0.7);
+    position: relative;
+    transition: 0.5s;
+}
+
+.gnb {
+    width: 1280px;
+    height: 58px;
+    margin: 0px auto;
+    line-height: 58px;
+}
+
+.nav_wrap:hover {
+    height: 250px;
+}
+
+.gnb > ul > li > a {
+    display: block;
+    padding: 0px 45px;
+}
+
+.nav_wrap > .gnb > ul > li > a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gnb .sub a {
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    display: block;
+    padding-left: 45px;
+    font-size: 14px;
+}
+
+.gnb > ul > li {
+    float: left;
+    position: relative;
+}
+
+/*sub menu*/
+
+.gnb .sub {
+    position: absolute;
+    width: 100%;
+}
+
+.gnb a:hover {
+    color: #e5e5e5;
+    background-color: rgba(83, 83, 83, 0.7);
+}
+
+
+
+div.h_top > .lnb_l {
+    width: 180px;
+    height: 28px;
+    line-height: 28px;
+    position: absolute;
+    top: 15px;
+    left: 0px;
+}
+
+div.h_top > .lnb_l li {
+    float: left;
+
+}
+
+div.h_top > .lnb_l li > a {
+    color: #e5e5e5;
+    padding: 0px 6px;
+    display: block;
+
+}
+
+div.h_top > .lnb_r {
+    width: 225px;
+    height: 28px;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    line-height: 28px;
+}
+
+div.h_top > .lnb_r > ul > li {
+    float: left;
+}
+
+div.h_top > .lnb_r > ul > li:last-child {
+    background-color: rgba(26, 26, 26, 0.7);
+    height: 28px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+div.h_top > .lnb_r > ul > li:last-child > a {
+    margin-left: 5px;
+}
+
+div.h_top > .lnb_r > ul > li:last-child:hover {
+    background-color: rgba(26, 26, 26, 0.7);
+    height: 100px;
+}
+
+div.h_top > .lnb_r > ul > li > a {
+    padding: 0px 5px;
+    color: #e5e5e5;
+}
+
+div.h_top > .lnb_r .sub_lang > li {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+}
+
+div.h_top > .lnb_r > ul > li > .sub_lang > li > a {
+    display: block;
+    padding-left: 24px;
+    color: #e5e5e5;
+}
+
+/*컨텐츠영역 시작*/
+section {
+    width: 100%;
+}
+
+.content_wrap {
+    width: 1280px;
+    margin: 0px auto;
+    position: relative;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin: 80px 0px 50px;
+}
+
+#visual img {
+    width: 100%;
+    height: 830px;
+    background-color: #cae692;
+}
+
+section h2 {
+    display: none;
+}
+
+fieldset > legend {
+    display: none;
+}
+
+fieldset {
+    background-color: rgba(48, 48, 48, 0.8);
+    padding: 24px;
+    box-sizing: border-box;
+    width: 330px;
+    height: 400px;
+    text-align: left;
+}
+
+fieldset label {
+    display: inline-block;
+    width: 120px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 40px;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+fieldset label:nth-child(2) {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.booking_form {
+    position: absolute;
+    right: 20px;
+    top: -554px;
+}
+
+fieldset > p {
+    margin: 30px 0px;
+}
+
+fieldset > p > input {
+    width: 240px;
+    height: 52px;
+    background-color: #016ba9;
+    border: none;
+    color: #ffffff;
+    transition:background 0.3s;
+
+}
+fieldset > p > input:hover{
+    background-color: #024f7c;
+}
+fieldset input,
+select {
+    cursor: pointer;
+}
+
+.package {
+    width: 1280px;
+    height: 700px;
+    position: relative;
+}
+
+.package > ul {
+    position: absolute;
+    width: 400px;
+}
+
+.package > .pac_rooms {
+    top: 114px;
+    left: 0px;
+}
+
+.package > .pac_sweet {
+    top: 114px;
+    left: 440px;
+}
+
+.package > .pac_hocance {
+    top: 114px;
+    left: 880px;
+
+}
+
+.package > .pac_swiper {
+    position: absolute;
+    top: 664px;
+    width: 100%;
+    height: 10px;
+    text-align: center;
+}
+
+.package ul > li:first-child {
+    width: 35px;
+    height: 28px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+
+    background-color: #484848;
+    text-align: center;
+    line-height: 28px;
+    margin-bottom: 18px;
+}
+
+.package ul > li:nth-child(2) {
+    font-size: 18px;
+    padding-bottom: 13px;
+    font-weight: 700;
+
+}
+
+.package ul > li:nth-child(3) {
+    font-size: 14px;
+    padding-bottom: 29px;
+    color: #6f6f6f;
+}
+
+.package ul > li:nth-child(4) {
+    font-size: 15px;
+    margin-bottom: 39px;
+}
+
+.sug {
+    width: 320px;
+    height: 508px;
+    overflow: hidden;
+}
+
+.sug.rest,
+.sug.all {
+    height: 254px;
+}
+
+.sug_inner img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+
+}
+
+.sug_inner .sug:hover img {
+    transform: scale(1.1);
+}
+
+.suggest {
+    height: 700px;
+
+}
+
+.suggest ul {
+    position: relative;
+}
+
+.suggest li {
+    width: 320px;
+    position: absolute;
+}
+
+.suggest .sug.family {
+    left: 0px;
+    top: 0px;
+}
+
+.suggest .sug.lovers {
+    left: 320px;
+    top: 0px;
+}
+
+.suggest .sug.special {
+    left: 640px;
+    top: 0px;
+}
+
+.suggest .sug.rest {
+    left: 960px;
+    top: 0px;
+}
+
+.suggest .sug.all {
+    left: 960px;
+    top: 254px;
+}
+
+.sug_inner a {
+    position: relative;
+
+}
+
+.sug_inner span {
+    font-size: 25px;
+    width: 200px;
+    height: 36px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    z-index: 100;
+    font-weight: bold;
+}
+
+.sug_inner li:hover img {
+    opacity: 0.7;
+}
+
+.sug_inner li:hover span {
+    color: #1c1c1c;
+}
+
+.membership {
+    width: 100%;
+    height: 518px;
+    background-color: #363636;
+}
+
+.membership .content_wrap {
+
+    position: relative;
+}
+
+.membership h3 {
+    margin: 0px;
+    display: none;
+}
+
+.membership ul {
+    display: inline-block;
+}
+
+.membership .mem_l {
+    width: 400px;
+    height: 271px;
+    background-color: #000000;
+    color: #e5e5e5;
+    padding: 36px 25px;
+    margin-top: 123px;
+}
+
+.membership .mem_l li:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 22px;
+}
+
+.membership .mem_l li:nth-child(2) {
+    padding-bottom: 8px;
+
+}
+
+.membership .mem_l li:nth-child(3) {
+    padding-bottom: 30px;
+
+}
+
+.membership .mem_l li:nth-child(n+4) {
+    color: #9d9d9d;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.mem_more {
+    width: 124px;
+    height: 34px;
+    background-color:#016ba9;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    left: 276px;
+    transition:background 0.3s;
+}
+
+.mem_more:hover {
+    background-color: #024f7c;
+}
+
+.mem_more a {
+    color: #e5e5e5;
+    font-size: 15px;
+    line-height: 34px;
+    display: block;
+
+}
+
+.membership .mem_r {
+    width: 830px;
+    height: 464px;
+    background-color: #df7c2d;
+    position: absolute;
+    right: 0px;
+    top: 27px;
+
+}
+
+.membership .mem_r > li:first-child a {
+    display: block;
+    text-align: center;
+    padding: 100px;
+    transition: 0.5s;
+
+}
+
+.membership .mem_r > li:first-child a:hover {
+    opacity: 0.7;
+}
+
+.membership .mem_r > li:last-child {
+    position: relative;
+    bottom: 93px;
+}
+
+.sns_list > .content_wrap {
+    height: 108px;
+    width: 1280px;
+    border-radius: 30px;
+    background-color: #707070;
+    position: relative;
+    margin: 141px auto;
+
+}
+
+.sns_list h3 {
+    margin: 0px;
+
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left: 220px;
+    top: 45.25px;
+}
+
+.sns_list ul > li {
+    display: inline-block;
+}
+
+.sns_list ul {
+    position: absolute;
+    right: 220px;
+    top: 18px;
+}
+
+.sns_list > .content_wrap li:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+/*푸터영역 시작*/
+footer {
+    width: 100%;
+    background-color: #222121;
+}
+
+footer > .f_inner {
+    width: 1280px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+footer > .f_inner li {
+    height: 32px;
+}
+
+footer a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+footer > .f_inner > nav > .l_foot {
+    float: left;
+    width: 180px;
+    height: 129px;
+}
+
+footer > .f_inner .c_foot {
+    width: 354px;
+    height: 142px;
+    font-size: 16px;
+    color: #ffffff;
+    float: left;
+    margin-left: 375px;
+}
+
+footer > .f_inner .r_foot {
+    float: right;
+    width: 162px;
+    height: 118px;
+}
+
+footer > .f_inner > nav {
+    position: relative;
+    height: 325px;
+}
+
+footer > .f_inner .b_foot {
+    position: absolute;
+    left: 374px;
+    top: 208px;
+}
+
+footer > .f_inner .b_foot > li {
+    display: inline-block;
+}
+
+footer > .f_inner .b_foot > li > a {
+    padding: 0px 20px;
+    text-transform: uppercase;
+}
+
+footer > .f_inner .c_foot > .btn_tel {
+    width: 204px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #016ba9;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+footer > .f_inner .c_foot > .btn_tel:hover {
+    background-color: #024f7c;
+}
+
+footer > .f_inner .c_foot > .btn_tel > a {
+    line-height: 40px;
+    display: block
+}
+
+footer > .f_inner > address,
+p {
+    color: #818181;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+
+}
+
+#main_scroll_top_btn {
+    position: fixed;
+    right: 24px;
+    bottom: 20px;
+    z-index: 100;
+}
