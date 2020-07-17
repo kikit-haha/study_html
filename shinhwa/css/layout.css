@@ -181,7 +181,8 @@ h3 {
 
 #visual img {
     width: 100%;
-    height: 830px;
+    height: auto;
+    
     background-color: #cae692;
 }
 
@@ -504,8 +505,8 @@ select {
     border-radius: 30px;
     background-color: #707070;
     position: relative;
-    margin: 141px auto;
-
+    margin: 500px auto;
+    margin-bottom:10px;
 }
 
 .sns_list h3 {
@@ -552,22 +553,22 @@ footer > .f_inner {
 
 footer > .f_inner li {
     height: 32px;
+    
 }
 
 footer a {
     color: #ffffff;
     font-size: 16px;
+    line-height:32px;
 }
 
 footer > .f_inner > nav > .l_foot {
     float: left;
     width: 180px;
-    height: 129px;
 }
 
 footer > .f_inner .c_foot {
     width: 354px;
-    height: 142px;
     font-size: 16px;
     color: #ffffff;
     float: left;
@@ -582,15 +583,17 @@ footer > .f_inner .r_foot {
 
 footer > .f_inner > nav {
     position: relative;
-    height: 325px;
+    height: 225px;
 }
 
 footer > .f_inner .b_foot {
     position: absolute;
     left: 374px;
-    top: 208px;
+    top: 190px;
 }
-
+footer > .f_inner .b_foot a{
+    font-size:14px;
+}
 footer > .f_inner .b_foot > li {
     display: inline-block;
 }
