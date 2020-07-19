@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    <style>
+      * {
+        list-style: none;
+        box-sizing: border-box;
+      }
+      li {
+        width: 150px;
+        height: 150px;
+        border: 2px solid #014537;
+        border-radius: 50%;
+        margin: 0px auto;
+        display: inline-block;
+      }
+      li img {
+        display: inline-block;
+        width: 150px;
+        padding: 20px;
+      }
+      .rotate_01 > li img:hover {
+        animation: rotate;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      li:hover {
+        background-color: #014537;
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .rotate_02 > li img:hover {
+        animation: rotate180;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes rotate180 {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="rotate_01">
+      <li>
+        <a href="#"><img src="img/ani-01.png" alt="" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/ani-02.png" alt="" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/ani-03.png" alt="" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/ani-04.png" alt="" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/ani-05.png" alt="" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/ani-06.png" alt="" /></a>
+      </li>
+    </ul>
+    <ul class="rotate_02">
+      <li>
+        <a href="#"><img src="img/ani-01.png" alt="" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/ani-02.png" alt="" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/ani-03.png" alt="" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/ani-04.png" alt="" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/ani-05.png" alt="" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/ani-06.png" alt="" /></a>
+      </li>
+    </ul>
+  </body>
+</html>
