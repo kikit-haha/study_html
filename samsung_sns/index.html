@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>삼성sns</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      ul,
+      li,
+      ol {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      body {
+        font-family: "나눔고딕", roboto, sans-serif;
+        font-size: 14px;
+        color: #333;
+      }
+      .sns {
+        width: 245px;
+        height: 32px;
+      }
+      li {
+        float: left;
+      }
+      a {
+        display: block;
+        width: 32px;
+        height: 32px;
+        text-indent: -9999px;
+      }
+      .sns > ul > li {
+        background: url("image/sns_black.png") no-repeat;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: left;
+      }
+
+      .sns > ul > li:nth-child(2) {
+        background-position: -54px 0px;
+      }
+
+      .sns > ul > li:nth-child(3) {
+        background-position: -110px 0px;
+      }
+
+      .sns > ul > li:nth-child(4) {
+        background-position: -165px 0px;
+      }
+
+      .sns > ul > li:last-child {
+        background-position: -221px 0px;
+      }
+      .sns > ul > li:hover {
+        background-image: url("image/sns_blue.png");
+      }
+    </style>
+
+    <script src="script/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <footer>
+
+      <nav class="sns clearfix">
+        <ul>
+          <li><a href="https://www.facebook.com/SamsungKorea/" title="페이스북">페이스북</a></li>
+          <li><a href="https://www.youtube.com/c/samsungkorea" title="유튜브">유튜브</a></li>
+          <li><a href="https://www.instagram.com/samsungkorea" title="">인스타그램</a></li>
+          <li><a href="https://blog.naver.com/samsung_korea" title="블로그">블로그</a></li>
+          <li><a href="https://pf.kakao.com/_JwRdu" title="카카오톡">카카오톡</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
