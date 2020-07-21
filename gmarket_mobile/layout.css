@@ -81,7 +81,7 @@ header > h1 > a {
     background-image: url('img/sprite__header.png');
     background-position: -51px 1px;
     background-size: 400px;
-    transform: translate(24px, 0px);
+    transform: translate(27px, -2px);
     text-indent: -9999px;
 }
 
