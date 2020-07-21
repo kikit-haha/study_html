@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+    *{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    font-family: "나눔고딕", roboto, sans-serif;
+}
+
+header,
+section,
+footer {
+    /*  
+    width:480px;안드로이드 해상도 기준 hdpi(480*960)*/
+    margin: 0px auto;
+    overflow: hidden;
+    margin:0px auto;
+}
+section>img, footer>img{
+    width:100%;
+}
+header {
+    height: 105px;
+    background-color: #fff;
+    padding-top:10px;
+}
+
+header > h1 {
+    width: 52px;
+    height: 55px;
+    background-image: url('img/sprite__header.png');
+    background-size: 400px;
+    background-position: 0px 2px;
+    float: left;
+    margin-left:5px;
+}
+
+header > h1 > a {
+    display: block;
+    height: 55px;
+    text-indent: -9999px;
+}
+
+.search {
+    border: 1px solid #4598f8;
+    width: 68%;
+    height: 40px;
+    border-radius: 25px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#search_box {
+    border: none;
+    height: 30px;
+    width: 72%;
+    /*            오른쪽 버튼 들어갈자리 뺀 값*/
+    transform: translate(10px, 5px);
+    /*            위에랑 왼쪽 띄기 margin으로 해도 됨.*/
+
+}
+
+.search > label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('img/sprite__header.png');
+    background-position: -51px 1px;
+    background-size: 400px;
+    transform: translate(24px, 0px);
+    text-indent: -9999px;
+}
+
+#cart {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url('img/sprite__header.png');
+    background-size: 400px;
+    background-position: -82px 0px;
+    float: right;
+    text-indent: -9999px;
+    margin-top: 5px;
+}
+
+header > nav {
+    clear: both;
+    transform:translateY(8px);
+}
+
+.gnb {
+    background-color:  #4598f8;
+    height: 42px;
+}
+
+.gnb > ul { text-align:center;}
+
+.gnb > ul > li {
+    display: inline-block;
+}
+
+.gnb > ul > li > a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 42px;
+    padding:0px 4px;
+   
+}
+
