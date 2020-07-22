@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-    *{
+* {
     margin: 0px;
     padding: 0px;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 ul,
@@ -19,38 +19,46 @@ a {
 
 body {
     font-family: "나눔고딕", roboto, sans-serif;
+    font-size:12px;
+    color:#333;
 }
 
 header,
 section,
 footer {
-    width:100%;
+    width: 100%;
     /*  
     width:480px;안드로이드 해상도 기준 hdpi(480*960)*/
     margin: 0px auto;
+    overflow:hidden;
 }
-section>img, footer>img{
-    width:100%;
+
+section > img,
+footer > img {
+    width: 100%;
 }
+
 header {
     height: 105px;
     background-color: #fff;
-    padding-top:10px;
-    position:fixed;
-    top:0px;  
+    padding-top: 10px;
+    position: fixed;
+    top: 0px;
 }
-header:not(.gnb_bottom){
-    position:fixed;
-    top:0px;
+
+header:not(.gnb_bottom) {
+    position: fixed;
+    top: 0px;
 }
+
 header > h1 {
     width: 52px;
     height: 55px;
-    background-image: url('img/sprite__header.png');
+    background-image: url('../img/sprite__header.png');
     background-size: 400px;
     background-position: 0px 2px;
     float: left;
-    margin-left:5px;
+    margin-left: 5px;
 }
 
 header > h1 > a {
@@ -66,7 +74,7 @@ header > h1 > a {
     border-radius: 25px;
     float: left;
     margin-left: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 #search_box {
@@ -83,7 +91,7 @@ header > h1 > a {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background-image: url('img/sprite__header.png');
+    background-image: url('../img/sprite__header.png');
     background-position: -51px 1px;
     background-size: 400px;
     transform: translate(27px, -2px);
@@ -94,30 +102,32 @@ header > h1 > a {
     display: inline-block;
     width: 48px;
     height: 48px;
-    background-image: url('img/sprite__header.png');
+    background-image: url(../img/sprite__header.png);
     background-size: 400px;
     background-position: -82px 0px;
     float: right;
     text-indent: -9999px;
     margin-top: 5px;
 }
-.clearfix::after{
-    content:"";
-    display:block;
-    clear:both;
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
+
 header > nav {
     clear: both;
-    transform:translateY(8px);
+    transform: translateY(8px);
 }
 
 .gnb {
-    background-color:  #4598f8;
+    background-color: #4598f8;
     height: 42px;
 }
-
-.gnb > ul { text-align:center;}
-
+.gnb>ul{
+    margin:0px auto;
+}
 .gnb > ul > li {
     display: inline-block;
 }
@@ -127,8 +137,192 @@ header > nav {
     font-size: 14px;
     font-weight: bold;
     line-height: 42px;
-    padding:0px 4px;
-   
+      padding: 0px 2px;
+
 }
 
+.gnb_bottom {
+    height: 52px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 8px;
+    z-index: 1000;
 
+
+}
+.gnb_bottom > ul > li {
+    height: 52px;
+    display: inline-block;
+    background-image: url('../img/sprite__header.png');
+    background-size: 400px;
+    margin: 0px 23px;
+}
+
+.gnb_bottom > ul > li > a {
+    height: 52px;
+    display: block;
+    text-indent: -9999px;
+
+}
+
+.gnb_bottom > ul > li:first-child {
+    width: 52px;
+    height: 52px;
+    background-position: 231px 0px;
+}
+
+.gnb_bottom > ul > li:first-child:hover {
+    background-position: 231px -56px;
+}
+
+.gnb_bottom > ul > li:nth-child(2) {
+    width: 52px;
+    height: 52px;
+    background-position: 178px 0px;
+}
+
+.gnb_bottom > ul > li:nth-child(2):hover {
+    background-position: 178px -56px;
+}
+
+.gnb_bottom > ul > li:nth-child(3) {
+    width: 26px;
+    height: 52px;
+    background-position: 125px 0px;
+}
+
+.gnb_bottom > ul > li:nth-child(3):hover {
+    background-position: 125px -56px;
+}
+
+.gnb_bottom > ul > li:nth-child(4) {
+    width: 38px;
+    height: 52px;
+    background-position: 99px -1px;
+}
+
+.gnb_bottom > ul > li:nth-child(4):hover {
+    background-position: 99px -57px;
+}
+
+.gnb_bottom > ul > li:last-child {
+    width: 59px;
+    height: 52px;
+    background-position: 59px 0px;
+}
+
+.gnb_bottom > ul > li:last-child:hover {
+    background-position: 59px -56px;
+}
+/*콘텐츠영역에 패딩값을 헤더영역 높이만큼 설정하여 헤더와 겹치지않게 설정*/
+section{
+    clear:both;
+    padding-top:105px;
+}
+section img, footer img{
+    width:100%;
+}
+footer>img{
+    margin-bottom:20px;
+}
+footer{
+    clear:both;
+    padding:30px 0px 50px 0px;
+    background-color: #5e636d;
+    color:#b9b9b9;
+    text-align:center;
+}
+footer>.f_btn{
+    background-color:#6e727b;
+    padding: 4px 10px;
+}
+footer a{
+    color:#b9b9b9;
+}
+footer>h3{
+    padding:12px 0px;
+}
+footer>h3 span{
+    border:1px solid #fff;
+    border-radius:50%;
+    display:inline-block;
+    width:30px;
+    height:30px;
+    padding-top:2px;
+    margin:12px;
+    transform:rotate(90deg);
+}
+
+footer>address{
+    background-color: #646972;
+    font-size:11px;
+    font-style:normal;
+    padding:10px 0px;
+    display:none;
+}
+footer>address>dl{
+    width:380px;
+    margin:0px auto;
+}
+footer>address>dl::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+footer>address>dl>dt{
+    float:left;
+    color:#9ea1a8;
+    width:90px;
+    text-align:left;
+
+}
+footer>address>dl>dd{
+    float:left;
+    width:280px;
+    text-align:left;
+    padding-left:10px;
+    color:#ccc;
+
+}
+address dt::after
+, address dd::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/*체크박스숨기기*/
+#f_toggle{
+    display:none;
+}
+/*기호클릭시 사업자정보(address) 나오게하기
+체크박스가 클릭되면 바로아래 address가 나온다
+*/
+#f_toggle:checked+address{
+    display:block;
+}
+footer>h3>label{
+    cursor:pointer;
+}
+.f_lnb a:focus{
+    color:#ff0000;
+}
+#top_btn {
+    width: 41px;
+    height: 41px;
+    background-image: url("../img/footer.png");
+    background-position: -435px -359px;
+    position: fixed;
+    bottom: 62px;
+    right: 10px;
+
+}
+
+#top_btn > a {
+    display: block;
+    height: 41px;
+    text-indent: -9999px;
+}
+footer p{
+    padding-bottom:10px;
+}
