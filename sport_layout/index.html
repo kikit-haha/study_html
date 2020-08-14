@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--	css reset-->
+	<link rel="stylesheet" href="css/reset.css">
+	<!--base.css-->
+	<link rel="stylesheet" href="css/base.css">
+	<!--layout_pc.css-->
+	<link rel="stylesheet" href="css/layout_pc.css">
+	<!--아이콘폰트 주소-->
+	<!--css3속성사용시 접두사 생략해도 되는 소스-->
+	<script src="script/prefixfree.min.js"></script>
+	<script>
+		var mobile_keys = new Array('iPhone', 'iPod', 'Android', 'BlackBerry', 'WindowsPhone', 'WindowsCE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Nokia');
+		if (document.URL.match('move_pc_screen')) mobile_keys = null;
+		for(i in mobile_keys){
+			if(navigator.userAgent.match(mobile_keys[i] != null)){
+				location.href = "https://kikit-haha.github.io/hello/sport/mindex.html";
+				break;
+			}
+		}
+	</script>
+	<title>스포츠브랜드 메인페이지(pc버전)</title>
+</head>
+
+<body>
+	<!--상단헤더영역 시작-->
+	<header></header>
+	<!--콘텐츠영역 시작-->
+	<section></section>
+	<!--푸터영역 시작-->
+	<footer></footer>
+</body>
+
+</html>
