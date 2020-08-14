@@ -10,13 +10,14 @@
 	<link rel="stylesheet" href="css/base.css">
 	<!--layout_pc.css-->
 	<link rel="stylesheet" href="css/layout_pc.css">
-	<!--아이콘폰트 주소-->
+
 	<!--css3속성사용시 접두사 생략해도 되는 소스-->
 	<script src="script/prefixfree.min.js"></script>
 	<script>
-		var mobile_keys = new Array('iPhone', 'iPod', 'Android', 'BlackBerry', 'WindowsPhone', 'WindowsCE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Nokia');
+		var mobile_keys = new Array('iPhone','Android', 'BlackBerry', 'WindowsPhone', 'WindowsCE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Nokia');
 		if (document.URL.match('move_pc_screen')) mobile_keys = null;
-		for(i in mobile_keys){
+			
+		for(var i in mobile_keys){
 			if(navigator.userAgent.match(mobile_keys[i] != null)){
 				location.href = "https://kikit-haha.github.io/hello/sport/mindex.html";
 				break;
